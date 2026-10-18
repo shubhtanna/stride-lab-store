@@ -1,0 +1,779 @@
+{
+ "products": [
+  {
+   "id": "SL-1001",
+   "handle": "free-run-flyknit-crimson",
+   "name": "Free Run Flyknit",
+   "brand": "Nike",
+   "category": "running",
+   "colour": "Crimson / White",
+   "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&q=75&auto=format&fit=crop",
+   "price": 8995,
+   "salePrice": null,
+   "rating": 4.6,
+   "reviewCount": 212,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": false
+    }
+   ],
+   "description": "A soft, flexible daily trainer with a sock-like Flyknit upper. Built for easy miles and short tempo runs.",
+   "features": [
+    "Flyknit upper",
+    "Flexible tri-star outsole",
+    "8 mm drop",
+    "Weight: 228 g (UK 8)"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1002",
+   "handle": "react-pulse-black",
+   "name": "React Pulse",
+   "brand": "Nike",
+   "category": "running",
+   "colour": "Triple Black",
+   "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=900&q=75&auto=format&fit=crop",
+   "price": 11495,
+   "salePrice": null,
+   "rating": 4.4,
+   "reviewCount": 98,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "Responsive React foam with a wider forefoot for longer runs. A dependable all-rounder for 5K to half-marathon training.",
+   "features": [
+    "React foam midsole",
+    "Engineered mesh",
+    "10 mm drop",
+    "Weight: 274 g (UK 8)"
+   ],
+   "tags": [
+    "new"
+   ]
+  },
+  {
+   "id": "SL-1003",
+   "handle": "deerupt-runner-grey",
+   "name": "Deerupt Runner",
+   "brand": "Adidas",
+   "category": "running",
+   "colour": "Grey Two / Solar Yellow",
+   "image": "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=900&q=75&auto=format&fit=crop",
+   "price": 7999,
+   "salePrice": 5599,
+   "rating": 4.1,
+   "reviewCount": 64,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": false
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": false
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "An ultra-light running-inspired sneaker with a grid-mesh upper and cushioned midsole.",
+   "features": [
+    "Grid mesh upper",
+    "EVA midsole",
+    "Rubber outsole"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1004",
+   "handle": "superrep-go-volt",
+   "name": "SuperRep Go",
+   "brand": "Nike",
+   "category": "training",
+   "colour": "Volt / Black",
+   "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=900&q=75&auto=format&fit=crop",
+   "price": 7495,
+   "salePrice": null,
+   "rating": 4.3,
+   "reviewCount": 51,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "For HIIT and circuit classes. A wide, stable base and a cut-out midsole for quick lateral moves.",
+   "features": [
+    "Foam midsole with cut-outs",
+    "Flex grooves",
+    "Breathable mesh"
+   ],
+   "tags": [
+    "new"
+   ]
+  },
+  {
+   "id": "SL-1005",
+   "handle": "air-max-1-sport-red",
+   "name": "Air Max 1",
+   "brand": "Nike",
+   "category": "lifestyle",
+   "colour": "White / Sport Red",
+   "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=900&q=75&auto=format&fit=crop",
+   "price": 12795,
+   "salePrice": null,
+   "rating": 4.8,
+   "reviewCount": 341,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": false
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "The 1987 icon with the visible Air unit. Suede and mesh with a bright red mudguard.",
+   "features": [
+    "Visible Max Air unit",
+    "Suede and mesh upper",
+    "Waffle outsole"
+   ],
+   "tags": [
+    "bestseller"
+   ]
+  },
+  {
+   "id": "SL-1006",
+   "handle": "air-max-90-gold",
+   "name": "Air Max 90",
+   "brand": "Nike",
+   "category": "lifestyle",
+   "colour": "Kumquat / Gold",
+   "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=900&q=75&auto=format&fit=crop",
+   "price": 13995,
+   "salePrice": 10495,
+   "rating": 4.7,
+   "reviewCount": 187,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": false
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "A bold colourway of the Air Max 90, with a padded collar and plush Max Air cushioning.",
+   "features": [
+    "Max Air cushioning",
+    "Leather and textile upper",
+    "Waffle outsole"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1007",
+   "handle": "air-force-1-07-white",
+   "name": "Air Force 1 '07",
+   "brand": "Nike",
+   "category": "lifestyle",
+   "colour": "White / White",
+   "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=900&q=75&auto=format&fit=crop",
+   "price": 9695,
+   "salePrice": null,
+   "rating": 4.9,
+   "reviewCount": 1204,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "The everyday leather classic. Clean, crisp and goes with everything.",
+   "features": [
+    "Full-grain leather",
+    "Encapsulated Air",
+    "Pivot-circle outsole"
+   ],
+   "tags": [
+    "bestseller"
+   ]
+  },
+  {
+   "id": "SL-1008",
+   "handle": "air-force-1-wheat",
+   "name": "Air Force 1 Premium",
+   "brand": "Nike",
+   "category": "lifestyle",
+   "colour": "Wheat / Gum",
+   "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=900&q=75&auto=format&fit=crop",
+   "price": 11295,
+   "salePrice": null,
+   "rating": 4.6,
+   "reviewCount": 143,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": false
+    },
+    {
+     "uk": 7,
+     "inStock": false
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "Nubuck upper in a warm wheat tone with a gum sole. A seasonal favourite.",
+   "features": [
+    "Nubuck upper",
+    "Gum rubber outsole",
+    "Padded collar"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1009",
+   "handle": "af1-shadow-pastel",
+   "name": "AF1 Shadow",
+   "brand": "Nike",
+   "category": "lifestyle",
+   "colour": "Pastel Multi",
+   "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&q=75&auto=format&fit=crop",
+   "price": 10795,
+   "salePrice": 8095,
+   "rating": 4.5,
+   "reviewCount": 76,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": false
+    },
+    {
+     "uk": 11,
+     "inStock": false
+    }
+   ],
+   "description": "Layered details and a doubled-up Swoosh in soft pastels. A playful take on the AF1.",
+   "features": [
+    "Layered leather upper",
+    "Stacked midsole",
+    "Women's fit"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1010",
+   "handle": "x-90-pink",
+   "name": "X-90",
+   "brand": "New Balance",
+   "category": "lifestyle",
+   "colour": "Pink / Grey",
+   "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=900&q=75&auto=format&fit=crop",
+   "price": 8999,
+   "salePrice": 6299,
+   "rating": 4.2,
+   "reviewCount": 58,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "A remix of classic 990 lines with a modern REVlite midsole.",
+   "features": [
+    "Suede and mesh upper",
+    "REVlite midsole",
+    "Rubber outsole"
+   ],
+   "tags": [
+    "new"
+   ]
+  },
+  {
+   "id": "SL-1011",
+   "handle": "247-olive",
+   "name": "247 Classic",
+   "brand": "New Balance",
+   "category": "lifestyle",
+   "colour": "Olive / White",
+   "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=900&q=75&auto=format&fit=crop",
+   "price": 7499,
+   "salePrice": null,
+   "rating": 4.3,
+   "reviewCount": 92,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": false
+    }
+   ],
+   "description": "A sleek, sock-fit sneaker made for all-day wear, from desk to weekend.",
+   "features": [
+    "Sock-fit construction",
+    "REVlite cushioning",
+    "Mesh upper"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1012",
+   "handle": "court-classic-white",
+   "name": "Court Classic",
+   "brand": "Puma",
+   "category": "lifestyle",
+   "colour": "White / Silver",
+   "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=900&q=75&auto=format&fit=crop",
+   "price": 4999,
+   "salePrice": 2999,
+   "rating": 4.0,
+   "reviewCount": 133,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": false
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "Tennis-inspired leather low-top with perforated details. Easy to style, easy to clean.",
+   "features": [
+    "Leather upper",
+    "Perforated toe",
+    "Rubber cupsole"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1013",
+   "handle": "old-skool-maroon",
+   "name": "Old Skool",
+   "brand": "Vans",
+   "category": "skate",
+   "colour": "Port Royale / White",
+   "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=900&q=75&auto=format&fit=crop",
+   "price": 5499,
+   "salePrice": 2799,
+   "rating": 4.6,
+   "reviewCount": 415,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "The original side-stripe skate shoe in durable canvas and suede.",
+   "features": [
+    "Canvas and suede upper",
+    "Padded collar",
+    "Signature waffle outsole"
+   ],
+   "tags": [
+    "bestseller"
+   ]
+  },
+  {
+   "id": "SL-1014",
+   "handle": "janoski-max-grey",
+   "name": "SB Janoski Max",
+   "brand": "Nike",
+   "category": "skate",
+   "colour": "Wolf Grey / White",
+   "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=900&q=75&auto=format&fit=crop",
+   "price": 8495,
+   "salePrice": null,
+   "rating": 4.4,
+   "reviewCount": 67,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": false
+    },
+    {
+     "uk": 10,
+     "inStock": false
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "The Janoski silhouette with Max Air cushioning for all-day comfort on and off the board.",
+   "features": [
+    "Knit upper",
+    "Max Air unit",
+    "Herringbone outsole"
+   ],
+   "tags": []
+  },
+  {
+   "id": "SL-1015",
+   "handle": "air-jordan-1-bred",
+   "name": "Air Jordan 1 Low",
+   "brand": "Jordan",
+   "category": "basketball",
+   "colour": "Black / Varsity Red",
+   "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=900&q=75&auto=format&fit=crop",
+   "price": 9995,
+   "salePrice": null,
+   "rating": 4.8,
+   "reviewCount": 522,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": false
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": false
+    }
+   ],
+   "description": "The low-top version of the 1985 legend in the classic black and red colourway.",
+   "features": [
+    "Leather upper",
+    "Air-Sole unit",
+    "Solid rubber outsole"
+   ],
+   "tags": [
+    "new",
+    "bestseller"
+   ]
+  },
+  {
+   "id": "SL-1016",
+   "handle": "kyrie-7-black",
+   "name": "Kyrie 7",
+   "brand": "Nike",
+   "category": "basketball",
+   "colour": "Black / White",
+   "image": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=900&q=75&auto=format&fit=crop",
+   "price": 11995,
+   "salePrice": 8995,
+   "rating": 4.5,
+   "reviewCount": 39,
+   "sizes": [
+    {
+     "uk": 6,
+     "inStock": true
+    },
+    {
+     "uk": 7,
+     "inStock": true
+    },
+    {
+     "uk": 8,
+     "inStock": true
+    },
+    {
+     "uk": 9,
+     "inStock": true
+    },
+    {
+     "uk": 10,
+     "inStock": true
+    },
+    {
+     "uk": 11,
+     "inStock": true
+    }
+   ],
+   "description": "Built for quick cuts and fast changes of direction, with a curved outsole and responsive cushioning.",
+   "features": [
+    "Air Zoom Turbo unit",
+    "Curved traction pattern",
+    "Mesh upper"
+   ],
+   "tags": []
+  }
+ ],
+ "categories": [
+  {
+   "slug": "running",
+   "name": "Running"
+  },
+  {
+   "slug": "lifestyle",
+   "name": "Lifestyle"
+  },
+  {
+   "slug": "basketball",
+   "name": "Basketball"
+  },
+  {
+   "slug": "skate",
+   "name": "Skate"
+  },
+  {
+   "slug": "training",
+   "name": "Training"
+  }
+ ]
+}
