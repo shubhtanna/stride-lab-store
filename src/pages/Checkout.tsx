@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { Lock } from 'lucide-react'
 import { useCart } from '../context/CartContext'
-import { useTitle } from '../hooks/useCatalog'
+import { useCatalog, useTitle } from '../hooks/useCatalog'
+import { effectivePrice } from '../lib/api'
 import { formatPrice } from '../lib/format'
 
 type Form = { email: string; phone: string; name: string; address: string; city: string; state: string; pincode: string }
@@ -10,12 +11,30 @@ const EMPTY: Form = { email: '', phone: '', name: '', address: '', city: '', sta
 
 export default function Checkout() {
   useTitle('Checkout')
-  const { items, subtotal, shipping, total, clear } = useCart()
+  const { items, subtotal, shipping, total, clear, add } = useCart()
+  const { handle } = useParams()
+  const [params] = useSearchParams()
+  const { products } = useCatalog()
   const [form, setForm] = useState<Form>(EMPTY)
   const [payment, setPayment] = useState<'upi' | 'card' | 'cod'>('upi')
   const [errors, setErrors] = useState<Partial<Record<keyof Form, string>>>({})
   const [placing, setPlacing] = useState(false)
   const navigate = useNavigate()
+
+  // A shareable checkout link (/checkout/<handle> or /checkout?items=<handle>:<qty>,…)
+  // fills the cart in the browser so the same items open on any device, no cookies.
+  useEffect(() => {
+    if (products.length === 0) return
+    const specs = handle ? [`${handle}:1`] : (params.get('items') ?? '').split(',').filter(Boolean)
+    for (const spec of specs) {
+      const [slug, qtyRaw] = spec.split(':')
+      const p = products.find((x) => x.handle === slug)
+      if (!p) continue
+      const qty = Math.max(1, Math.min(Number(qtyRaw) || 1, 5))
+      add({ productId: p.id, handle: p.handle, name: p.name, brand: p.brand, image: p.image, size: p.sizes.find((s) => s.inStock)?.uk ?? p.sizes[0].uk, unitPrice: effectivePrice(p) }, qty)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [products, handle, params])
 
   if (items.length === 0) {
     return (
