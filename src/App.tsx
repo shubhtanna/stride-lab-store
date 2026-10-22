@@ -28,6 +28,7 @@ export default function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/products/:handle" element={<ProductPage />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout/:handle" element={<Checkout />} />
           <Route path="/order/:orderId" element={<OrderConfirmed />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />

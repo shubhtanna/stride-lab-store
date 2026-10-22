@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { Lock } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useTitle } from '../hooks/useCatalog'
+import { getProduct } from '../lib/api'
 import { formatPrice } from '../lib/format'
 
 type Form = { email: string; phone: string; name: string; address: string; city: string; state: string; pincode: string }
@@ -10,12 +11,58 @@ const EMPTY: Form = { email: '', phone: '', name: '', address: '', city: '', sta
 
 export default function Checkout() {
   useTitle('Checkout')
-  const { items, subtotal, shipping, total, clear } = useCart()
+  const { items, subtotal, shipping, total, clear, add } = useCart()
   const [form, setForm] = useState<Form>(EMPTY)
   const [payment, setPayment] = useState<'upi' | 'card' | 'cod'>('upi')
   const [errors, setErrors] = useState<Partial<Record<keyof Form, string>>>({})
   const [placing, setPlacing] = useState(false)
   const navigate = useNavigate()
+  const { handle } = useParams()
+  const [params] = useSearchParams()
+
+  // A shareable checkout link carries the order in the URL, so it opens the
+  // same items on any device with no cookies: /checkout/<slug> (one item) or
+  // /checkout?items=<slug>:<qty>,<slug>:<qty>.
+  useEffect(() => {
+    const wanted: { handle: string; qty: number }[] = []
+    if (handle) wanted.push({ handle, qty: 1 })
+    const itemsParam = params.get('items')
+    if (itemsParam) {
+      for (const part of itemsParam.split(',')) {
+        const [slug, qty] = part.split(':')
+        if (slug) wanted.push({ handle: slug, qty: Math.max(1, Math.min(Number(qty) || 1, 5)) })
+      }
+    }
+    if (wanted.length === 0) return
+    let alive = true
+    Promise.all(wanted.map((w) => getProduct(w.handle).then((p) => p && { p, qty: w.qty })))
+      .then((found) => {
+        if (!alive) return
+        clear()
+        for (const f of found) {
+          if (!f) continue
+          const size = f.p.sizes.find((s) => s.inStock)?.uk ?? f.p.sizes[0]?.uk
+          if (size == null) continue
+          add(
+            {
+              productId: f.p.id,
+              handle: f.p.handle,
+              name: f.p.name,
+              brand: f.p.brand,
+              image: f.p.image,
+              size,
+              unitPrice: f.p.salePrice ?? f.p.price,
+            },
+            f.qty,
+          )
+        }
+      })
+      .catch(() => {})
+    return () => {
+      alive = false
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [handle, params])
 
   if (items.length === 0) {
     return (
